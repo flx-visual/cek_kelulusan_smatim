@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman Kelulusan SMA NEGRI 1 KAPUAS TIMUR 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/wav">
+    Your browser does not support the audio element.
+</audio>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap');
+    
+    :root {
+      --primary: #4facfe;
+      --secondary: #00f2fe;
+      --success: #4ade80;
+      --danger: #f87171;
+      --warning: #fbbf24;
+      --lulus: #3b82f6;
+    }
+    
+    body {
+  background-image: url('image/angkatan.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+    
+    .title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+      margin-bottom: 5px;
+      background: linear-gradient(to right, white, #f0f9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .subtitle {
+      font-weight: 700; /* Dipertebal */
+      font-size: 2rem; /* Diperbesar */
+      opacity: 0.9;
+      margin-bottom: 10px;
+      color: #f0f9ff;
+    }
+    
+    .principal-name {
+      font-size: 2rem; /* Diperbesar */
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    
+    .principal-position {
+      font-size: 1.5rem; /* Diperbesar */
+      font-weight: 600;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+    
+    .principal-greeting {
+      font-size: 1.2rem; /* Diperkecil */
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    
+    .date-badge {
+      background: rgba(255,255,255,0.2);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-bottom: 30px;
+      backdrop-filter: blur(5px);
+    }
+    
+    .search-box {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: all 0.3s ease;
+    }
+    
+    .search-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    }
+    
+    .search-input {
+      background: rgba(255,255,255,0.8);
+      border: none;
+      border-radius: 12px;
+      padding: 15px 20px;
+      font-size: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      color: #000000;
+    }
+    
+    .search-input:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.9);
+    }
+    
+    .search-btn {
+      background: white;
+      color: var(--primary);
+      border: none;
+      border-radius: 12px;
+      padding: 15px 25px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .search-btn:hover {
+      background: #f0f9ff;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+    }
+    
+    .search-btn:disabled {
+      background: #e5e7eb;
+      color: #9ca3af;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .result-container {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      animation: fadeIn 0.5s ease-out;
+    }
+    
+    .status-badge {
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .status-lulus {
+      background: rgba(59, 130, 246, 0.2);
+      color: var(--lulus);
+      border: 2px solid var(--lulus);
+    }
+    
+    .status-tidak-lulus {
+      background: rgba(248, 113, 113, 0.2);
+      color: var(--danger);
+      border: 2px solid var(--danger);
+    }
+    
+    .status-not-found {
+      background: rgba(251, 191, 36, 0.2);
+      color: var(--warning);
+      border: 2px solid var(--warning);
+    }
+    
+    .status-not-time {
+      background: rgba(156, 163, 175, 0.2);
+      color: #6b7280;
+      border: 2px solid #6b7280;
+    }
+    
+    .student-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
+    .student-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    
+    .info-item {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .info-label {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-bottom: 3px;
+    }
+    
+    .info-value {
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: #f00;
+      opacity: 0;
+      z-index: 999;
+      animation: confetti 5s ease-in-out;
+    }
+    
+    .loading {
+      width: 24px;
+      height: 24px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    .floating-items {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+   
+    
+    .countdown-container {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #f0f9ff;
+    }
+    
+    .countdown-title {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .countdown-timer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    
+    .countdown-item {
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 10px 15px;
+      min-width: 70px;
+      text-align: center;
+    }
+    
+    .countdown-value {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: 'Bebas Neue', sans-serif;
+      line-height: 1;
+    }
+    
+    .countdown-label {
+      font-size: 0.7rem;
+      opacity: 0.8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .countdown-ended {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 15px;
+      background: rgba(59, 130, 246, 0.2);
+      border-radius: 10px;
+      border: 2px solid var(--lulus);
+    }
+    
+    .announcement-opened {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 15px;
+      background: rgba(59, 130, 246, 0.2);
+      border-radius: 10px;
+      border: 2px solid var(--lulus);
+      text-align: center;
+      margin-bottom: 30px;
+      animation: pulse 2s infinite;
+    }
+    
+    /* Landing Page Styles */
+    .landing-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    
+    }
+    
+    .principal-card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .principal-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.3);
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .principal-message {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    
+    .proceed-btn {
+      background: white;
+      color: var(--primary);
+      border: none;
+      border-radius: 12px;
+      padding: 15px 30px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .proceed-btn:hover {
+      background: #f0f9ff;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+    }
+    
+    .school-logo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+      object-fit: contain;
+      display: block;
+    }
+    
+    .back-btn {
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+      backdrop-filter: blur(5px);
+    }
+    
+    .back-btn:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes confetti {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(1000px) rotate(720deg); opacity: 0; }
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+    
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 20px;
+    }
+    
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 5px 15px rgb(0, 0, 0);
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+    
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    
+    @media (max-width: 640px) {
+      .title {
+        font-size: 2.5rem;
+      }
+      
+      .subtitle {
+        font-size: 1.5rem; /* Diperbesar untuk mobile */
+      }
+      
+      .principal-name {
+        font-size: 1.5rem; /* Diperbesar untuk mobile */
+      }
+      
+      .principal-position {
+        font-size: 1.2rem; /* Diperbesar untuk mobile */
+      }
+      
+      .principal-greeting {
+        font-size: 1rem; /* Diperkecil untuk mobile */
+      }
+      
+      .search-box {
+        padding: 20px;
+      }
+      
+      .student-info {
+        grid-template-columns: 1fr;
+      }
+      
+      .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+        color: #f0f9ff;
+      }
+      
+      .countdown-item {
+        min-width: 60px;
+        padding: 8px 10px;
+      }
+      
+      .countdown-value {
+        font-size: 1.5rem;
+      }
+      
+      .announcement-opened {
+        font-size: 1.5rem;
+      }
+      
+      /* Landing Page Mobile Styles */
+      .principal-card {
+        padding: 20px;
+        color: #000000;
+        box-shadow: 0 8px 20px rgba(158, 44, 44, 0.3);
+
+      }
+      
+      .principal-photo {
+        width: 120px;
+        height: 120px;
+      }
+      
+      .principal-message {
+        font-size: 1rem;
+        color: #000000;
+      }
+      
+      .proceed-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+      
+      .school-logo {
+        width: 100px;
+        height: 100px;
+      }
+    
+    .subtitle {
+  color: #fffefe;
+}
+    .footer {
+        color: #000000;
+    }
+    .container-mx-auto-px-4-py-8-max-w-4xl{
+        color: #000000;
+    }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Floating background elements -->
+  <div class="floating-items">
+    <div class="floating-item" style="width: 100px; height: 100px; top: 10%; left: 5%; animation-delay: 0s;"></div>
+    <div class="floating-item" style="width: 150px; height: 150px; top: 60%; left: 70%; animation-delay: 2s;"></div>
+    <div class="floating-item" style="width: 80px; height: 80px; top: 30%; left: 80%; animation-delay: 4s;"></div>
+    <div class="floating-item" style="width: 120px; height: 120px; top: 70%; left: 10%; animation-delay: 6s;"></div>
+  </div>
+
+  <!-- Landing Page Content (shown by default) -->
+  <div id="landing-page" class="landing-container">
+
+    <div class="text-center mb-8">
+      <img src="image/logo.png" alt="Logo SMATIM" class="school-logo">
+      <h1 class="title">PENGUMUMAN KELULUSAN</h1>
+      <h2 class="subtitle">SMA NEGERI 1 KAPUAS TIMUR</h2>
+    </div>
+
+    <div class="principal-card">
+      <div class="principal-greeting">SAMBUTAN</div>
+      <div class="principal-position">KEPALA SMA NEGERI 1 KAPUAS TIMUR</div>
+      
+      <!-- Principal's Photo -->
+      <img src="image/kepsek.jpeg" alt="My-Chat-GPT-image" alt="Foto Kepala Sekolah" class="principal-photo">
+      
+      <div class="principal-name">SUPARDI, S.Pd., M.Pd.</div>
+      
+      <div class="principal-message">
+        <p>Assalamualaikum warahmatullahi wabarakatuh, Salam sejahtera bagi kita semua.</p>
+        
+        <p class="mt-4">Anak-anakku yang saya banggakan, hari ini kalian menapaki akhir dari satu perjalanan di SMAN 1 Kapuas Timur dan bersiap memulai lembaran baru.</p>
+        
+        <p class="mt-4">Kelulusan ini bukanlah akhir, melainkan awal dari perjuangan yang lebih besar, Jadilah pribadi yang jujur, tangguh, dan terus belajar. </p>
+        
+        <p class="mt-4">Selamat atas kelulusan kalian. Banggakan orang tua, harumkan almamater, dan gapailah masa depan dengan penuh semangat.</p>
+        
+        <p class="mt-4">Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
+      </div>
+      
+      <div class="text-center">
+        <button id="proceedBtn" class="proceed-btn" onclick="proceedToAnnouncement()">
+          <i class="fas fa-arrow-right mr-2"></i> LIHAT PENGUMUMAN KELULUSAN
+        </button>
+      </div>
+    </div>
+    
+    <div class="footer text-center">
+      <p>© 2025 SMA NEGERI 1 KAPUAS TIMUR</p>
+      <p class="mt-2 text-sm opacity-70">Pengumuman ini bersifat resmi dan sah</p>
+    </div>
+  </div>
+
+  <!-- Announcement Page Content (hidden by default) -->
+  <div id="announcement-page" class="container mx-auto px-4 py-8 max-w-4xl"style="display: none;">
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <img src="image/logo.png" alt="Logo SMATIM" class="school-logo">
+      <h1 class="title">PENGUMUMAN KELULUSAN</h1>
+      <h2 class="subtitle">SMA NEGERI 1 KAPUAS TIMUR</h2>
+      <div class="date-badge">
+        <i class="fas fa-calendar-alt mr-2"></i> 5 Mei 2025
+      </div>
+      <!-- Back Button moved below date badge -->
+      <div class="text-center">
+        <button class="back-btn" onclick="backToLanding()">
+          <i class="fas fa-arrow-left mr-2"></i> Kembali ke Halaman Sambutan
+        </button>
+      </div>
+    </div>
+
+    <!-- Announcement Opened Banner (hidden by default) -->
+    <div id="announcement-opened" class="announcement-opened hidden">
+      <i class="fas fa-check-circle mr-2"></i> PENGUMUMAN TELAH DIBUKA!
+    </div>
+
+    <!-- Countdown Timer -->
+    <div id="countdown" class="countdown-container">
+      <div class="countdown-title">
+        <i class="fas fa-clock"></i> Waktu Menuju Pengumuman Kelulusan
+      </div>
+      <div id="countdown-timer" class="countdown-timer">
+        <div class="countdown-item">
+          <div id="days" class="countdown-value">00</div>
+          <div class="countdown-label">Hari</div>
+        </div>
+        <div class="countdown-item">
+          <div id="hours" class="countdown-value">00</div>
+          <div class="countdown-label">Jam</div>
+        </div>
+        <div class="countdown-item">
+          <div id="minutes" class="countdown-value">00</div>
+          <div class="countdown-label">Menit</div>
+        </div>
+        <div class="countdown-item">
+          <div id="seconds" class="countdown-value">00</div>
+          <div class="countdown-label">Detik</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box mb-8">
+      <div class="mb-6">
+        <input type="text" id="nisn" class="search-input w-full" placeholder="Masukkan NISN Anda" required>
+        <p class="text-sm mt-2 opacity-70">Contoh: 1234567890</p>
+      </div>
+      <button id="cekBtn" class="search-btn w-full" onclick="cekKelulusan()">
+        <span id="btnText">CEK KELULUSAN</span>
+        <span id="btnLoading" class="loading" style="display: none;"></span>
+      </button>
+    </div>
+
+    <!-- Results -->
+    <div id="hasil" class="result-container" style="display: none;">
+      <div id="status" class="status-badge">
+        <i class="fas fa-spinner fa-spin"></i> Memproses...
+      </div>
+      
+      <div class="student-card">
+        <h3 class="text-xl font-bold mb-4 flex items-center">
+          <i class="fas fa-user-graduate mr-2"></i> Data Siswa
+        </h3>
+        
+        <div class="student-info">
+          <div class="info-item">
+            <span class="info-label">Nama Lengkap</span>
+            <span id="nama-siswa" class="info-value">-</span>
+          </div>
+          
+          <div class="info-item">
+            <span class="info-label">Rata-rata Nilai</span>
+            <span id="nilai" class="info-value">-</span>
+          </div>
+          
+          <div class="info-item">
+            <span class="info-label">Status Kelulusan</span>
+            <span id="status-siswa" class="info-value">-</span>
+          </div>
+        </div>
+      </div>
+      
+      <div id="next-steps" class="mt-6 hidden">
+        <h3 class="text-xl font-bold mb-4 flex items-center">
+          <i class="fas fa-arrow-right mr-2"></i> PERHATIAN
+        </h3>
+        <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Pengambilan SKL bisa datang kesekolah</li>
+            <li><span class="font-bold">Dilarang melakukan aksi konvoi dan coret coret pakaian</span></li>
+            <li>Hadiri acara perpisahan pada <span class="font-bold">15 Mei 2025</span></li>
+            <li>Rayakan keberhasilan dengan cara yang <span class="font-bold">positif dan bermartabat</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="bg-white bg-opacity-10 rounded-xl p-6 mt-8">
+      <h3 class="text-xl font-bold mb-4 flex items-center">
+        <i class="fas fa-info-circle mr-2"></i> Informasi Penting
+      </h3>
+      <div class="space-y-4">
+        <div class="flex items-start">
+          <div class="bg-blue-500 bg-opacity-20 p-2 rounded-lg mr-3">
+            <i class="fas fa-clock text-blue-300"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Hadiri acara perpisahan pada 15 Mei 2025</h4>
+          </div>
+        </div>
+                
+        <div class="flex items-start">
+          <div class="bg-purple-500 bg-opacity-20 p-2 rounded-lg mr-3">
+            <i class="fas fa-exclamation-triangle text-purple-300"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Pengambilan SKL</h4>
+            <p class="text-sm mt-2 opacity-70">Bisa diambil setelah pengumuman dibuka</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer text-center">
+      <p>© 2025 SMA NEGERI 1 KAPUAS TIMUR</p>
+      <p class="mt-2 text-sm opacity-70">Pengumuman ini bersifat resmi dan sah</p>
+    </div>
+  </div>
+
+  <script>
+    // Hardcoded student data
+    const studentData = [
+      //operator
+      { nisn: "1234567891",
+        nama: "ADMIN", 
+        nilai: "100.00", 
+        lulus: true 
+      },
+      //data kelas mipa1
+      {
+        nisn: "0075179085",
+        nama: "Abdillah",
+        nilai: "81.12",
+        lulus: true
+      },
+      {
+        nisn: "0076323750",
+        nama: "Ahmad Rafiq",
+        nilai: "75.36",
+        lulus: true
+      },
+      {
+        "nisn": "0082240665",
+        "nama": "Ahmad Riduan",
+        "nilai": "75.44",
+        "lulus": true
+      },
+      {
+        "nisn": "0076392255",
+        "nama": "AHMAD YUSUF",
+        "nilai": "79.90",
+        "lulus": true
+      },
+      {
+        "nisn": "0073867188",
+        "nama": "ANNISA",
+        "nilai": "74.71",
+        "lulus": true
+      },
+      {
+        "nisn": "0078543231",
+        "nama": "Bunga Alya",
+        "nilai": "82.12",
+        "lulus": true
+      },
+      {
+        "nisn": "3088135481",
+        "nama": "Dahlia",
+        "nilai": "78.50",
+        "lulus": true
+      },
+      {
+        "nisn": "0071993244",
+        "nama": "DEA ARMISA",
+        "nilai": "86.61",
+        "lulus": true
+      },
+      {
+        "nisn": "0073554891",
+        "nama": "Dhini Febriyanti",
+        "nilai": "86.46",
+        "lulus": true
+      },
+      {
+        "nisn": "0076873671",
+        "nama": "DIAH",
+        "nilai": "78.74",
+        "lulus": true
+      },
+      {
+        "nisn": "0079826255",
+        "nama": "Enisya Dilla",
+        "nilai": "84.80",
+        "lulus": true
+      },
+      {
+        "nisn": "0074921943",
+        "nama": "Fatimah",
+        "nilai": "83.51",
+        "lulus": true
+      },
+      {
+        "nisn": "0068700956",
+        "nama": "FENDY RAMADANA",
+        "nilai": "71.99",
+        "lulus": true
+      },
+      {
+        "nisn": "0072741427",
+        "nama": "Fikri Prayoga",
+        "nilai": "77.61",
+        "lulus": true
+      },
+      {
+        "nisn": "0078387154",
+        "nama": "Fitriyah",
+        "nilai": "77.10",
+        "lulus": true
+      },
+      {
+        "nisn": "0074355487",
+        "nama": "Herlina",
+        "nilai": "86.44",
+        "lulus": true
+      },
+      {
+        "nisn": "0054812281",
+        "nama": "Herman",
+        "nilai": "76.76",
+        "lulus": true
+      },
+      {
+        "nisn": "0071670993",
+        "nama": "Hilal Ramadhani",
+        "nilai": "76.84",
+        "lulus": true
+      },
+      {
+        "nisn": "0083926863",
+        "nama": "IKI PADILAH",
+        "nilai": "73.79",
+        "lulus": true
+      },
+      {
+        "nisn": "0052792264",
+        "nama": "JAMILAH",
+        "nilai": "77.78",
+        "lulus": true
+      },
+      {
+        "nisn": "0079850937",
+        "nama": "Khadijah",
+        "nilai": "77.37",
+        "lulus": true
+      },
+      {
+        "nisn": "0078860497",
+        "nama": "Laila",
+        "nilai": "84.27",
+        "lulus": true
+      },
+      {
+        "nisn": "0073564994",
+        "nama": "Muhammad Yusuf",
+        "nilai": "74.39",
+        "lulus": true
+      },
+      {
+        "nisn": "0029044020",
+        "nama": "RAHMAT SAPTA",
+        "nilai": "76.53",
+        "lulus": true
+      },
+
+      //data kelas mipa2
+      {
+        nisn : "0075455995",
+        nama : "MUHAMMAD ARIFIN",
+        nilai : "80.38",
+        lulus : true
+      },
+      { nama : "Muhammad Nor Hafiz",
+        nisn : "3078101287",
+        nilai:"86,26",
+        lulus : true
+      }, 
+      { nama : "Muhammad Syarif",
+      	nisn:"0069586020",
+        nilai:"78,88", 
+        lulus:true
+      }, 
+      { 
+        nisn: "0072306150", 
+        nama: "Zahra Anggriani", 
+        nilai: "87.79", 
+        lulus: true },
+      { 
+        nisn: "0076095032", 
+        nama: "Zaltan Andre Joelvanka", 
+        nilai: "84.72", 
+        lulus: true 
+      },
+      { 
+        nisn: "0075448181", 
+        nama: "Nabila Syafirna", 
+        nilai: "84.74", 
+        lulus: true 
+      },
+      { 
+        nisn: "0074500297", 
+        nama: "Ni Kadek Sri Handayani", 
+        nilai: "81.80", 
+        lulus: true 
+      },
+      { 
+        nisn: "0085294900", 
+        nama: "Nida Khafia Rayyani", 
+        nilai: "88.50", 
+        lulus: true 
+      },
+      { 
+        nisn: "3069798704", 
+        nama: "Nila Arwaini", 
+        nilai: "85.76", 
+        lulus: true
+      },
+      { 
+        nisn: "0063516472", 
+        nama: "Nor Rohman", 
+        nilai: "77.69", 
+        lulus: true 
+      },
+      { 
+        nisn: "0083923163", 
+        nama: "NOVITA HERLINA", 
+        nilai: "82.84", 
+        lulus: true 
+      },
+      { 
+        nisn: "0072547859", 
+        nama: "Nurhayaty", 
+        nilai: "77.43", 
+        lulus: true 
+      },
+      { 
+        nisn: "0075557380", 
+        nama: "NURUL ANNA", 
+        nilai: "80.50", 
+        lulus: true 
+      },
+      { 
+        nisn: "3067891553", 
+        nama: "Nyoman Diyo Ariyana", 
+        nilai: "80.89", 
+        lulus: true 
+      },
+      { 
+        nisn: "0071373723", 
+        nama: "RAHMAT NURHADI", 
+        nilai: "77.98", 
+        lulus: true 
+      },
+      { 
+        nisn: "0097682662", 
+        nama: "REVALDI AZHAR", 
+        nilai: "80.86", 
+        lulus: true 
+      },
+      { 
+        nisn: "0075869250", 
+        nama: "Rita", 
+        nilai: "81.23", 
+        lulus: true 
+      },
+      { 
+        nisn: "0059152960", 
+        nama: "SAIFUL ISLAM", 
+        nilai: "83.08", 
+        lulus: true 
+      },
+      { 
+        nisn: "0073954140", 
+        nama: "SELLA AULIA", 
+        nilai: "76.51", 
+        lulus: true 
+      },
+      { 
+        nisn: "0077394288", 
+        nama: "Silvana Rosa", 
+        nilai: "80.32", 
+        lulus: true 
+      },
+      {
+        nisn: "3067891553",
+        nama: "SITI AISYAH",
+        nilai:"80.89",
+        lulus:true
+      },
+      { 
+        nisn: "0076345310", 
+        nama: "SITI AULIA", 
+        nilai: "82.92", 
+        lulus: true 
+      },
+      { 
+        nisn: "0079577710", 
+        nama: "Siti Mawaddah", 
+        nilai: "84.42", 
+        lulus: true 
+      },
+      { 
+        nisn: "0076159234", 
+        nama: "Suryansyah", 
+        nilai: "77.66", 
+        lulus: true 
+      },
+      
+      //data kelas ips1
+      {
+        nisn: "0072978188",
+        nama: "Adil",
+        nilai: "74,77",
+        lulus: true
+      },
+      {
+        nisn: "0051358977",
+        nama: "Aditya",
+        nilai: "77,33",
+        lulus: true
+      },
+      {
+        nisn: "0074876789",
+        nama: "Ahkmad Muttahir",
+        nilai: "76,03",
+        lulus: true
+      },
+      {
+        nisn: "0068271205",
+        nama: "Ahmad Arifin",
+        nilai: "78,93",
+        lulus: true
+      },
+      {
+        nisn: "0076973926",
+        nama: "Ahmad Badawi",
+        nilai: "79,50",
+        lulus: true
+      },
+      {
+        nisn: "0077514782",
+        nama: "Ahmad Maulidan",
+        nilai: "75,04",
+        lulus: true
+      },
+      {
+        nisn: "0078341996",
+        nama: "Ahmad Rifaldy",
+        nilai: "80,27",
+        lulus: true
+      },
+      {
+        nisn: "0077605461",
+        nama: "Ahmad Syaufi Ramadhani",
+        nilai: "76,78",
+        lulus: true
+      },
+      {
+        nisn: "0076797401",
+        nama: "Akhmad Rifa'i Hidayat",
+        nilai: "77,30",
+        lulus: true
+      },
+      {
+        nisn: "0078537368",
+        nama: "Amanda",
+        nilai: "79,79",
+        lulus: true
+      },
+      {
+        nisn: "0064960400",
+        nama: "Andi Ragil Mika Saputra",
+        nilai: "75,63",
+        lulus: true
+      },
+      {
+        nisn: "0064123335",
+        nama: "APDAL FATURULLAH",
+        nilai: "77,89",
+        lulus: true
+      },
+      {
+        nisn: "0072388875",
+        nama: "Aulia Nazwa",
+        nilai: "79,00",
+        lulus: true
+      },
+      {
+        nisn: "0066943541",
+        nama: "Basran",
+        nilai: "81,31",
+        lulus: true
+      },
+      {
+        nisn: "0074448337",
+        nama: "HADRATUS SOLIHAH",
+        nilai: "76,62",
+        lulus: true
+      },
+      {
+        nisn: "0074464397",
+        nama: "Halimah",
+        nilai: "76,09",
+        lulus: true
+      },
+      {
+        nisn: "0072939434",
+        nama: "INDRA",
+        nilai: "79,50",
+        lulus: true
+      },
+      {
+        nisn: "0085960535",
+        nama: "IQBAL JEKRIS TATLIM",
+        nilai: "78,13",
+        lulus: true
+      },
+      {
+        nisn: "0079886644",
+        nama: "ISNI LAILI RAMADANIA",
+        nilai: "82,06",
+        lulus: true
+      },
+      {
+        nisn: "0066413291",
+        nama: "LIANI",
+        nilai: "80,20",
+        lulus: true
+      },
+      {
+        nisn: "3061088684",
+        nama: "M. Arif",
+        nilai: "76,33",
+        lulus: true
+      },
+      {
+        nisn: "0075087406",
+        nama: "M. Ihksan",
+        nilai: "75,51",
+        lulus: true
+      },
+      {
+        nisn: "0068495578",
+        nama: "M. Junaidi",
+        nilai: "75,27",
+        lulus: true
+      },
+      {
+        nisn: "0061173502",
+        nama: "MAHRINI",
+        nilai: "80,64",
+        lulus: true
+      },
+      {
+        nisn: "0077346363",
+        nama: "Maria Ulfah",
+        nilai: "81,26",
+        lulus: true
+      },
+      {
+        nisn: "0078447359",
+        nama: "Mariati",
+        nilai: "78,66",
+        lulus: true
+      },
+      {
+        nisn: "0078655588",
+        nama: "Maulida",
+        nilai: "77,93",
+        lulus: true
+      }, 
+      {
+        nama: "Maulida Rahmawati",	
+        nisn:	 "0056186313",
+        nilai:"78.87",
+        lulus: true
+      },
+      {
+        nama: "MAULIDYA ALAMSYAH",	
+        nisn:"0074831882",	 
+        nilai:"78,10",
+        lulus:true
+      }, 
+      {
+        nama: "MIMIT",	
+        nisn: "0011863236",	 
+        nilai:"77,34",
+        lulus:true
+      }, 
+      {
+        nama: "MUHAMAD HANAPI",
+        nisn:"0077022207",	
+        nilai: "75,22" ,
+        lulus:true
+      },
+      {
+        nama:"MUHAMMAD IBRAHIM",
+        nisn:	"0076938282",
+        nilai: "73,34",
+        lulus:true 
+      },
+      //data kelas ips2
+      {
+        nama: "MUHAMMAD IHSAN",
+        nisn: "0068464297",
+        nilai: "80,36",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD IRWAN",
+        nisn: "0089205932",
+        nilai: "78,00",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD ARDIANSYAH",
+        nisn: "0073341453",
+        nilai: "83,25",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD IQBAL AULIA RAHMAN",
+        nisn: "0076776212",
+        nilai: "76,17",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD MAULANA",
+        nisn: "0054656205",
+        nilai: "74,01",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD MUZHAN",
+        nisn: "0074588978",
+        nilai: "76,51",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD NAUFAL",
+        nisn: "0078445781",
+        nilai: "77,45",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD NAZMI ZULFIANNOR",
+        nisn: "0083024005",
+        nilai: "77,43",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD SULVIKAR",
+        nisn: "0074077260",
+        nilai: "79,44",
+        lulus: true
+      },
+      {
+        nama: "MUHAMMAD SYARIF",
+        nisn: "3071149451",
+        nilai: "75,28",
+        lulus: true
+      },
+      {
+        nama: "MUSTAKIM",
+        nisn: "0066843451",
+        nilai: "77,88",
+        lulus: true
+      },
+      {
+        nama: "NAZA ARIES SANDY",
+        nisn: "0069815460",
+        nilai: "76,51",
+        lulus: true
+      },
+      {
+        nama: "NUR ALYSA",
+        nisn: "0087051110",
+        nilai: "78,58",
+        lulus: true
+      },
+      {
+        nama: "NURANTI",
+        nisn: "0072764233",
+        nilai: "79,11",
+        lulus: true
+      },
+      {
+        nama: "NURFA DILLA",
+        nisn: "0079200081",
+        nilai: "78,24",
+        lulus: true
+      },
+      {
+        nama: "NURISMAWATI",
+        nisn: "0075390959",
+        nilai: "78,88",
+        lulus: true
+      },
+      {
+        nama: "NURLIA SAPUTRI",
+        nisn: "0034446278",
+        nilai: "72,48",
+        lulus: true
+      },
+      {
+        nama: "PUTRA MAULIDI RAHMAN",
+        nisn: "0074974367",
+        nilai: "79,81",
+        lulus: true
+      },
+      {
+        nama: "RADITIA",
+        nisn: "0089012484",
+        nilai: "78,46",
+        lulus: true
+      },
+      {
+        nama: "RAHIMAH",
+        nisn: "0066339638",
+        nilai: "76,64",
+        lulus: true
+      },
+      {
+        nama: "RATNA SESAR",
+        nisn: "0086279949",
+        nilai: "78,01",
+        lulus: true
+      },
+      {
+        nama: "SAID USMAN AL HAIRID",
+        nisn: "0069078811",
+        nilai: "79,21",
+        lulus: true
+      },
+      {
+        nama: "SAR'AH",
+        nisn: "0074655330",
+        nilai: "78,59",
+        lulus: true
+      },
+      {
+        nama: "SITI AISYAH",
+        nisn: "0077809166",
+        nilai: "85,55",
+        lulus: true
+      },
+      {
+        nama: "SITI PAUJIAH",
+        nisn: "0074095046",
+        nilai: "75,98",
+        lulus: true
+      },
+      {
+        nama: "SITI RAHMAH",
+        nisn: "0063850194",
+        nilai: "76,20",
+        lulus: true
+      },
+      {
+        nama: "SURIYANI",
+        nisn: "0049007853",
+        nilai: "77,70",
+        lulus: true
+      },
+      {
+        nama: "TIARA PUTRI",
+        nisn: "0063307734",
+        nilai: "76,24",
+        lulus: true
+      },
+      {
+        nama: "ZAKARIA",
+        nisn: "0081281343",
+        nilai: "77,72",
+        lulus: true
+      }
+
+    ];
+    
+    // Announcement date and time (June 15, 2025 at 08:00 WITA)
+    const ANNOUNCEMENT_DATE = new Date('2025-05-05T10:00:00+07:00');
+    
+    let isAnnouncementTime = false;
+    
+    // Function to proceed to announcement page
+    function proceedToAnnouncement() {
+      document.getElementById('landing-page').style.display = 'none';
+      document.getElementById('announcement-page').style.display = 'block';
+      
+      // Scroll to top of the announcement page
+      window.scrollTo(0, 0);
+      
+      // Start countdown timer
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+      
+      // Disable check button initially
+      document.getElementById('cekBtn').disabled = true;
+    }
+    
+    // Function to go back to landing page
+    function backToLanding() {
+      document.getElementById('landing-page').style.display = 'block';
+      document.getElementById('announcement-page').style.display = 'none';
+      
+      // Scroll to top of the landing page
+      window.scrollTo(0, 0);
+    }
+    
+    // Countdown timer function
+    function updateCountdown() {
+      const now = new Date();
+      const diff = ANNOUNCEMENT_DATE - now;
+      
+      if (diff <= 0) {
+        isAnnouncementTime = true;
+        // Hide countdown and show announcement opened banner
+        document.getElementById('countdown').style.display = 'none';
+        document.getElementById('announcement-opened').classList.remove('hidden');
+        document.getElementById('cekBtn').disabled = false;
+        return;
+      }
+      
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      
+      document.getElementById('days').textContent = days.toString().padStart(2, '0');
+      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      
+      if (days === 0 && hours < 12) {
+        document.getElementById('countdown-timer').style.animation = 'pulse 1s infinite';
+      }
+    }
+    
+    function showLoading(show) {
+      const btnText = document.getElementById('btnText');
+      const btnLoading = document.getElementById('btnLoading');
+      const cekBtn = document.getElementById('cekBtn');
+      
+      if (show) {
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline-block';
+        cekBtn.disabled = true;
+      } else {
+        btnText.style.display = 'inline-block';
+        btnLoading.style.display = 'none';
+        cekBtn.disabled = !isAnnouncementTime;
+      }
+    }
+
+    function createConfetti() {
+      const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+      
+      for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.width = Math.random() * 10 + 5 + 'px';
+        confetti.style.height = Math.random() * 10 + 5 + 'px';
+        confetti.style.animationDelay = Math.random() * 5 + 's';
+        document.body.appendChild(confetti);
+        
+        setTimeout(() => {
+          confetti.remove();
+        }, 5000);
+      }
+    }
+    
+    function cekKelulusan() {
+      if (!isAnnouncementTime) {
+        const hasilDiv = document.getElementById('hasil');
+        const statusDiv = document.getElementById('status');
+        
+        hasilDiv.style.display = 'block';
+        statusDiv.className = 'status-badge status-not-time';
+        statusDiv.innerHTML = '<i class="fas fa-clock mr-2"></i> BELUM WAKTUNYA PENGUMUMAN';
+        
+        document.getElementById('nama-siswa').textContent = '-';
+        document.getElementById('nilai').textContent = '-';
+        document.getElementById('status-siswa').textContent = '-';
+        document.getElementById('next-steps').classList.add('hidden');
+        
+        hasilDiv.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+      
+      const nisn = document.getElementById('nisn').value.trim();
+      const hasilDiv = document.getElementById('hasil');
+      const statusDiv = document.getElementById('status');
+      const nextSteps = document.getElementById('next-steps');
+      
+      if (!nisn) {
+        alert("Harap masukkan NISN dengan benar!");
+        return;
+      }
+      
+      if (!/^\d{10}$/.test(nisn) && !/^\d{8}$/.test(nisn)) {
+        alert("NISN harus terdiri dari 8 atau 10 digit angka!");
+        return;
+      }
+      
+      try {
+        showLoading(true);
+        hasilDiv.style.display = 'block';
+        statusDiv.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Mencari data siswa...';
+        
+        setTimeout(() => {
+          const siswa = studentData.find(s => s.nisn === nisn);
+          
+          if (siswa) {
+            document.getElementById('nama-siswa').textContent = siswa.nama || '-';
+            document.getElementById('nilai').textContent = siswa.nilai || '-';
+            document.getElementById('status-siswa').textContent = siswa.lulus ? 'LULUS' : 'TIDAK LULUS';
+            
+            if (siswa.lulus) {
+              statusDiv.className = 'status-badge status-lulus';
+              statusDiv.innerHTML = '<i class="fas fa-check-circle mr-2"></i> SELAMAT! ANDA LULUS';
+              nextSteps.classList.remove('hidden');
+              createConfetti();
+            } else {
+              statusDiv.className = 'status-badge status-tidak-lulus';
+              statusDiv.innerHTML = '<i class="fas fa-times-circle mr-2"></i> ANDA TIDAK LULUS';
+              nextSteps.classList.add('hidden');
+            }
+          } else {
+            statusDiv.className = 'status-badge status-not-found';
+            statusDiv.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i> DATA TIDAK DITEMUKAN';
+            document.getElementById('nama-siswa').textContent = '-';
+            document.getElementById('nilai').textContent = '-';
+            document.getElementById('status-siswa').textContent = '-';
+            nextSteps.classList.add('hidden');
+          }
+          
+          showLoading(false);
+          hasilDiv.scrollIntoView({ behavior: 'smooth' });
+        }, 1000);
+      } catch (error) {
+        console.error('Error:', error);
+        statusDiv.className = 'status-badge status-not-found';
+        statusDiv.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i> TERJADI KESALAHAN';
+        showLoading(false);
+      }
+    }
+
+    document.getElementById('nisn').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        cekKelulusan();
+      }
+    });
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      // By default, show the landing page
+      document.getElementById('landing-page').style.display = 'block';
+      document.getElementById('announcement-page').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
